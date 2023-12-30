@@ -6,26 +6,22 @@
 
 }
 
-$breakpoints-up: (
-    "medium": "40em", // small screen = 640 / 16
-    "large": "64em", // large screens = 1024 / 16
-    "xlarge": "87.5em" // xlarge screens = 1400 /16
-);
+$breakpoints-up:("medium": "40em",  "large": "64em", "xlarge": "87.5em");
+$breakpoints-down:("small": "39.9em",  "medium": "63em", "large": "87.4em" );
 
-$breakpoints-down: (
-    "small": "39.9em"  // small screen = 639 / 16
-    "medium": "63em", // small screen = 1023 / 16
-    "large": "87.4em" // large screens = 1399 / 16
+     // small screen = 639 / 16
+   //  "medium": "63em", // small screen = 1023 / 16
+    // "large": "87.4em" // large screens = 1399 / 16
 
-);
+
 
 @mixin breakpoint-up($size){
-    @media (min-width: map-get($breakpoint-up, $size)) {
+    @media (min-width: map-get($breakpoints-up, $size)) {
         @content;
     }
 }
 @mixin breakpoint-down($size){
-    @media (max-width: map-get($breakpoint-down, $size)) {
+    @media (max-width: map-get($breakpoints-down, $size)) {
         @content;
     }
 }

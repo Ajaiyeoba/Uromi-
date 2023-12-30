@@ -47,13 +47,11 @@ button{
 // Visibility
 // Hide for tablets and mobile devices
 .hide-for-mobile{
-    @include breakpoint-down(medium) {   
+   @include breakpoint-down(small){
     display: none;
-    }
+   }
 }
-  // Hide for Deskto
+  // Hide for Desktop
 .hide-for-desktop{
-    @include breakpoint-up(large){
-        display: none;
-    }
+   
 }
