@@ -1,0 +1,31 @@
+// Brerakpoints
+
+@media(min-width: 16em ) // To convert px to rem/ em divide the px value by 16 
+{
+    // styles here
+
+}
+
+$breakpoints-up: (
+    "medium": "40em", // small screen = 640 / 16
+    "large": "64em", // large screens = 1024 / 16
+    "xlarge": "87.5em" // xlarge screens = 1400 /16
+);
+
+$breakpoints-down: (
+    "small": "39.9em"  // small screen = 639 / 16
+    "medium": "63em", // small screen = 1023 / 16
+    "large": "87.4em" // large screens = 1399 / 16
+
+);
+
+@mixin breakpoint-up($size){
+    @media (min-width: map-get($breakpoint-up, $size)) {
+        @content;
+    }
+}
+@mixin breakpoint-down($size){
+    @media (max-width: map-get($breakpoint-down, $size)) {
+        @content;
+    }
+}

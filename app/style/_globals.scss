@@ -36,4 +36,24 @@ button{
     padding: 0.625rem 1.625rem;
     border-radius: 6px;
     border: none;
+    cursor: pointer;
+    color: $color1;
+    background-color: $color2;
+    font-weight:  400;
+    font-family:  $font-fam;
+    font-size: 0.8125rem;
+}
+
+// Visibility
+// Hide for tablets and mobile devices
+.hide-for-mobile{
+    @include breakpoint-down(medium) {   
+    display: none;
+    }
+}
+  // Hide for Deskto
+.hide-for-desktop{
+    @include breakpoint-up(large){
+        display: none;
+    }
 }

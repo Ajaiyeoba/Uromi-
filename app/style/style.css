@@ -37,6 +37,12 @@ button {
   padding: 0.625rem 1.625rem;
   border-radius: 6px;
   border: none;
+  cursor: pointer;
+  color: #FFFFFF;
+  background-color: #1090CB;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8125rem;
 }
 
 .header nav {
@@ -48,12 +54,13 @@ button {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  color: #1090CB;
 }
 .header__menu > span {
   display: block;
   width: 26px;
   height: 2px;
-  background-color: #1090CB;
+  background-color: #000;
 }
 .header__menu > span:not(:last-child) {
   margin-bottom: 3px;
