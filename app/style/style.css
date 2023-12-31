@@ -45,12 +45,21 @@ button {
   font-size: 0.8125rem;
 }
 
-.hide-for-mobile {
-  @i;
+@media (max-width: 63em) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 64em) {
+  .hide-for-desktop {
+    display: none;
+  }
 }
 
 .header nav {
-  padding: 24px;
+  padding: 1.9375rem 2rem;
+  border-bottom: 0.04375rem solid #C4C4C4;
 }
 .header__logo {
   font-family: "Poppins", sans-serif;
@@ -65,10 +74,30 @@ button {
   width: 26px;
   height: 2px;
   background-color: #000;
+  transition: all 300ms ease-in-out;
+  transform-origin: left center;
 }
 .header__menu > span:not(:last-child) {
   margin-bottom: 3px;
 }
+.header__menu > span.open > span:first-child {
+  transform: rotate(45deg);
+}
+.header__menu > span.open > span:nth-child(2) {
+  opacity: 0;
+}
+.header__menu > span.open > span:last-child {
+  transform: rotate(-45deg);
+}
 .header__links a {
-  font-size: 0.875rem;
+  position: relative;
+  font-size: 1.125rem;
+  color: #000;
+  transition: color 200ms ease-in-out;
+}
+.header__links a:not(:last-child) {
+  margin-right: 42px;
+}
+.header__links a:hover {
+  color: #1090CB;
 }/*# sourceMappingURL=style.css.map */
