@@ -59,6 +59,10 @@ body.noscroll {
   overflow: hidden;
 }
 
+h1, h2, h3 {
+  margin-top: 0;
+}
+
 a, a:visited, a:hover {
   text-decoration: none;
 }
@@ -81,7 +85,7 @@ a, a:visited, a:hover {
   align-items: center;
 }
 
-button {
+button.contact {
   padding: 0.625rem 1.625rem;
   border-radius: 6px;
   border: none;
@@ -91,6 +95,18 @@ button {
   font-weight: 400;
   font-family: "Poppins", sans-serif;
   font-size: 0.8125rem;
+}
+
+button.view {
+  padding: 0.625rem 1.625rem;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #1090CB;
+  background-color: #FFFFFF;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8125rem;
+  border: 1px solid #1090CB;
 }
 
 @media (max-width: 63em) {
@@ -121,14 +137,14 @@ button {
   right: 0;
   left: 0;
   bottom: 0;
-  background: linear-gradient(#C4C4C4, #1090CB);
+  background: transparent;
 }
 .header nav {
   position: relative;
   background-color: #FFFFFF;
   padding-top: 1.6255rem;
   padding-bottom: 1.625rem;
-  border-bottom: 0.04375rem solid #C4C4C4;
+  border-bottom: 0.04375rem solid #c4c4c4;
 }
 .header__logo {
   font-family: "Poppins", sans-serif;
@@ -150,20 +166,23 @@ button {
   margin-bottom: 3px;
 }
 .header__menu {
-  background-color: #FFFFFF;
+  background-color: #1090CB;
   padding: 1.625rem;
   border-radius: 5px;
   position: absolute;
-  width: calc(100% - 5rem);
+  width: calc(100% - 7rem);
   left: 50%;
   transform: translateX(-50%);
   margin-top: 1.5rem;
 }
 .header__menu a {
   color: #000;
-  padding: 0.625rem;
+  padding: 0.6235rem;
   display: block;
-  text-align: center;
+  text-align: left;
+}
+.header__menu a:hover {
+  color: #FFFFFF;
 }
 .header__links a {
   position: relative;
@@ -176,4 +195,55 @@ button {
 }
 .header__links a:hover {
   color: #1090CB;
+}
+
+.hero {
+  background: rgba(16, 144, 203, 0.1019607843);
+}
+.hero__img {
+  background-image: url("/asses/Ellipse1.svg");
+  background-size: 52%;
+  background-repeat: no-repeat;
+  background-position: right;
+  min-height: 17.5rem;
+  position: relative;
+}
+.hero__img::before {
+  content: " ";
+  height: 100%;
+  width: 100%;
+  background-image: url("/assets/Billusinglaptop1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+}
+.hero__text {
+  text-align: center;
+}
+.hero__text h1 {
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 1.5rem;
+}
+.hero__text h1 span {
+  color: #1090CB;
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.hero__text p {
+  color: #5C5C5C;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 204.3%; /* 32.688px */
+  margin-bottom: 2.25rem;
 }/*# sourceMappingURL=style.css.map */

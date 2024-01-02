@@ -14,10 +14,14 @@ body{
     font-size: $font-md;
     color: $color3;
 
+ 
 
     &.noscroll{
         overflow: hidden;
     }
+}
+h1, h2, h3{
+    margin-top: 0;
 }
 a, a:visited, a:hover{
     text-decoration: none;
@@ -43,7 +47,7 @@ a, a:visited, a:hover{
 
 // Buttons
 
-button{
+button.contact{
     padding: 0.625rem 1.625rem;
     border-radius: 6px;
     border: none;
@@ -53,6 +57,17 @@ button{
     font-weight:  400;
     font-family:  $font-fam;
     font-size: 0.8125rem;
+}
+button.view{
+    padding: 0.625rem 1.625rem;
+    border-radius: 6px;
+    cursor: pointer;
+    color: $color2;
+    background-color: $color1;
+    font-weight:  400;
+    font-family:  $font-fam;
+    font-size: 0.8125rem;
+    border: 1px solid $color2;
 }
 
 

@@ -22,7 +22,7 @@
         right: 0;
         left: 0;
         bottom: 0;
-        background: linear-gradient($color4, $color2 );
+        background: transparent;
 }
 
     nav{
@@ -61,19 +61,23 @@
 
 
     &__menu{
-        background-color: $color1;
+        background-color: $color2;
         padding: 1.625rem;
         border-radius: 5px;
         position: absolute;
-        width: calc(100% - 5rem);
+        width: calc(100% - 7rem);
         left: 50%;
         transform: translateX(-50%);
         margin-top: 1.5rem;
         a{
             color: $color3;
-            padding: 0.625rem;
+            padding: 0.6235rem;
             display: block;
-            text-align: center;
+            text-align: left;   
+
+            &:hover{
+                color: $color1;
+            }
         }
     
     }
