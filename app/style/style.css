@@ -55,6 +55,9 @@ body {
   font-size: 1.125rem;
   color: #000;
 }
+body.noscroll {
+  overflow: hidden;
+}
 
 a, a:visited, a:hover {
   text-decoration: none;
@@ -114,13 +117,15 @@ button {
 .header .overlay {
   opacity: 0;
   position: fixed;
-  top: 5.625rem;
+  top: 0rem;
   right: 0;
   left: 0;
   bottom: 0;
   background: linear-gradient(#C4C4C4, #1090CB);
 }
 .header nav {
+  position: relative;
+  background-color: #FFFFFF;
   padding-top: 1.6255rem;
   padding-bottom: 1.625rem;
   border-bottom: 0.04375rem solid #C4C4C4;
