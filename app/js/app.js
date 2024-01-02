@@ -9,12 +9,12 @@ hamBtn.addEventListener('click',function() {
 
     if (header.classList.contains('open')) {
         header.classList.remove('open'); // Closes Hamburger
-        overlay.classList.add('.fade-out');
-        overlay.classList.remove('.fade-in');
-    } else {
+        overlay.classList.remove('fade-in');
+        overlay.classList.add('fade-out');
+    }
+     else{
     header.classList.add('open'); // opens hamburger
-    overlay.classList.add('.fade-in');
-    overlay.classList.remove('.fade-out');
-
+    overlay.classList.remove('fade-out');
+    overlay.classList.add('fade-in');
     }
 });
