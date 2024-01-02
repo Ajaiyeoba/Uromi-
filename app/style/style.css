@@ -8,11 +8,12 @@
     opacity: 0;
   }
   to {
+    visibility: visible;
     opacity: 1;
   }
 }
 .fade-in {
-  animation: fade-in 400ms ease-in-out forwards;
+  animation: fade-in 200ms ease-in-out forwards;
 }
 
 @keyframes fade-out {
@@ -31,6 +32,10 @@
 .fade-out {
   display: none;
   animation: fade-out 400ms ease-in-out forwards;
+}
+
+.has-fade {
+  visibility: hidden;
 }
 
 html {
@@ -113,7 +118,7 @@ button {
   right: 0;
   left: 0;
   bottom: 0;
-  background: linear-gradient(left to right, #000 #C4C4C4);
+  background: linear-gradient(#C4C4C4, #1090CB);
 }
 .header nav {
   padding-top: 1.6255rem;
@@ -142,12 +147,12 @@ button {
 .header__menu {
   background-color: #FFFFFF;
   padding: 1.625rem;
-  margin: 0px 1.8rem;
-  border-radius: 3px;
+  border-radius: 5px;
   position: absolute;
-  width: calc(100% - 3rem);
+  width: calc(100% - 5rem);
   left: 50%;
   transform: translateX(-50%);
+  margin-top: 1.5rem;
 }
 .header__menu a {
   color: #000;
