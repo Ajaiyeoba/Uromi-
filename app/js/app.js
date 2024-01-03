@@ -4,7 +4,7 @@ const header = document.querySelector('.header')
 const overlay = document.querySelector('.overlay');
 const fadeElem = document.querySelectorAll('.has-fade');
 
-
+// Declarations 
 
 hamBtn.addEventListener('click',function() { 
     console.log('clicked Hamburger');

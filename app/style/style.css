@@ -13,7 +13,7 @@
   }
 }
 .fade-in {
-  animation: fade-in 200ms ease-in-out forwards;
+  animation: fade-in 1s ease-in-out forwards;
 }
 
 @keyframes fade-out {
@@ -68,6 +68,8 @@ a, a:visited, a:hover {
 }
 
 .container {
+  max-width: 69.375rem;
+  margin: 0 auto;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
@@ -122,13 +124,13 @@ button.view {
 }
 
 .header.open .header__toggle > span:first-child {
-  transform: rotate(45deg);
+  transform: rotate(50deg);
 }
 .header.open .header__toggle > span:nth-child(2) {
   opacity: 0;
 }
 .header.open .header__toggle > span:last-child {
-  transform: rotate(-45deg);
+  transform: rotate(-50deg);
 }
 .header .overlay {
   opacity: 0;
@@ -153,6 +155,7 @@ button.view {
   font-weight: 700;
   line-height: normal;
   color: #1090CB;
+  transition: 200ms;
 }
 .header__toggle > span {
   display: block;
@@ -200,13 +203,30 @@ button.view {
 .hero {
   background: rgba(16, 144, 203, 0.1019607843);
 }
+@media (min-width: 64em) {
+  .hero {
+    display: flex;
+    align-items: center;
+  }
+}
 .hero__img {
-  background-image: url("/asses/Ellipse1.svg");
+  background-image: url("/assets/Ellipse1.svg");
   background-size: 52%;
   background-repeat: no-repeat;
   background-position: right;
   min-height: 17.5rem;
   position: relative;
+}
+@media (min-width: 64em) {
+  .hero__img {
+    flex: 3;
+    order: 2;
+    height: 41rem;
+    margin-top: -10rem;
+    margin-bottom: 2rem;
+    background-image: url("/assets/Ellipse1.svg");
+    background-position: right center;
+  }
 }
 .hero__img::before {
   content: " ";
@@ -220,6 +240,12 @@ button.view {
 }
 .hero__text {
   text-align: center;
+}
+@media (min-width: 64em) {
+  .hero__text {
+    flex: 2;
+    order: 1;
+  }
 }
 .hero__text h1 {
   color: #000;
