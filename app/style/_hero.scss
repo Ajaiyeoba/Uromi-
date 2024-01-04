@@ -50,7 +50,12 @@
         font-weight: 600;
         line-height: normal;
         margin-bottom: 1.5rem;
-        }
+        
+    
+            @include breakpoint-up(large){
+                font-size: $font-lg;
+            }
+    }
         h1 span{
         color: $color2;
         font-family: $font-fam;

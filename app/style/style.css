@@ -13,7 +13,7 @@
   }
 }
 .fade-in {
-  animation: fade-in 1s ease-in-out forwards;
+  animation: fade-in 200ms ease-in-out forwards;
 }
 
 @keyframes fade-out {
@@ -124,13 +124,13 @@ button.view {
 }
 
 .header.open .header__toggle > span:first-child {
-  transform: rotate(50deg);
+  transform: rotate(45deg);
 }
 .header.open .header__toggle > span:nth-child(2) {
   opacity: 0;
 }
 .header.open .header__toggle > span:last-child {
-  transform: rotate(-50deg);
+  transform: rotate(-45deg);
 }
 .header .overlay {
   opacity: 0;
@@ -255,6 +255,11 @@ button.view {
   font-weight: 600;
   line-height: normal;
   margin-bottom: 1.5rem;
+}
+@media (min-width: 64em) {
+  .hero__text h1 {
+    font-size: 3.25rem;
+  }
 }
 .hero__text h1 span {
   color: #1090CB;
