@@ -129,6 +129,12 @@ button.view {
   background-repeat: no-repeat;
   background-position: center;
   height: 33rem;
+  display: flex;
+}
+@media (max-width: 87.4em) {
+  .views {
+    display: block;
+  }
 }
 
 .header.open .header__toggle > span:first-child {

@@ -95,4 +95,8 @@ button.view{
     background-repeat: no-repeat;
     background-position: center;
     height: 33rem;
+    display: flex;
+    @include breakpoint-down(large){
+        display: block;
+    }
 }
