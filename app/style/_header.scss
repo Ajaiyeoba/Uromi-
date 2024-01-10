@@ -38,7 +38,7 @@
     font-family: $font-fam;
     font-size: 1.8125rem;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 800;
     line-height: normal;
     color: $color2;
     transition: 200ms;
@@ -95,6 +95,8 @@
             }
             &:hover{
                 color: $color2;
+                border-radius: 4px;
+                margin
             }
         }
     }
