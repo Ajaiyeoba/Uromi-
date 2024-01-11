@@ -1,0 +1,14 @@
+.phase{
+    background-image: url('/assets/Vector 4.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    display: block;
+    margin-top: 3rem;
+
+    &__phaseHero{
+        display: flex;
+    }
+}
+

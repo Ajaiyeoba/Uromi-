@@ -38,6 +38,19 @@
   visibility: hidden;
 }
 
+.phase {
+  background-image: url("/assets/Vector 4.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  display: block;
+  margin-top: 3rem;
+}
+.phase__phaseHero {
+  display: flex;
+}
+
 html {
   font-size: 100%;
   box-sizing: border-box;
@@ -94,7 +107,7 @@ button.contact {
   cursor: pointer;
   color: #FFFFFF;
   background-color: #1090CB;
-  font-weight: 400;
+  font-weight: 500;
   font-family: "Poppins", sans-serif;
   font-size: 0.8125rem;
 }
@@ -120,20 +133,6 @@ button.view {
 @media (min-width: 64em) {
   .hide-for-desktop {
     display: none;
-  }
-}
-
-.views {
-  background-image: url("/assets/Vector 4.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 33rem;
-  display: flex;
-}
-@media (max-width: 87.4em) {
-  .views {
-    display: block;
   }
 }
 
@@ -166,7 +165,7 @@ button.view {
   font-family: "Poppins", sans-serif;
   font-size: 1.8125rem;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 800;
   line-height: normal;
   color: #1090CB;
   transition: 200ms;
@@ -212,6 +211,7 @@ button.view {
 }
 .header__links a:hover {
   color: #1090CB;
+  border-radius: 4px;
 }
 
 .hero {
@@ -315,6 +315,6 @@ button.view {
   font-family: "Poppins", sans-serif;
   font-size: 1.125rem;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 175%; /* 31.5px */
 }/*# sourceMappingURL=style.css.map */

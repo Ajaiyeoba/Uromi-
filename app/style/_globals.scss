@@ -89,14 +89,3 @@ button.view{
 }
 
 
-.views{
-    background-image: url('/assets/Vector 4.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 33rem;
-    display: flex;
-    @include breakpoint-down(large){
-        display: block;
-    }
-}
