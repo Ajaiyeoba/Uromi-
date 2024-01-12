@@ -4,11 +4,50 @@
     background-repeat: no-repeat;
     background-position: center;
     height: 100%;
-    display: block;
+    display: flex;
     margin-top: 3rem;
 
-    &__phaseHero{
+    @include breakpoint-up(large){
         display: flex;
+        align-items: center;
+     }
+   
+    &__img{
+       display: flex;
+       background-image: url('/assets/Activities.png');
+       height: 40rem;
+       background-repeat: no-repeat;
+       margin-top: 4rem;
+       @include breakpoint-up(large){
+        flex: 3;
+            order: 2;
+            height: 41rem;
+            margin-top: -10rem;
+            margin-bottom: 2rem;
+       }
+    }
+    
+    &__text{
+        text-align: center;
+        margin-bottom: 3rem;
+        @include breakpoint-up(large){
+            flex: 2;
+            order: 1;
+            margin-bottom: 1.5rem;
+         }
+        h1{
+        color: $color3;
+        font-family: $font-fam;
+        font-size: $font-lg;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-bottom: 1.5rem;
+        
+    
+            @include breakpoint-up(large){
+                font-size: $font-sm;
+            }
+    }
     }
 }
-
