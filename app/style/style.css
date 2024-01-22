@@ -39,60 +39,19 @@
 }
 
 .phase {
-  background-image: url("/assets/Vector 4.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100%;
+  display: inline;
+  margin-top: -5rem;
+  background-color: #1090CB;
+}
+.phase__Hero {
   display: flex;
-  margin-top: 3rem;
+  background-color: #1090CB;
+  width: 100%;
 }
-@media (min-width: 64em) {
-  .phase {
-    display: flex;
-    align-items: center;
-  }
-}
-.phase__img {
-  display: flex;
-  background-image: url("/assets/Activities.png");
-  height: 40rem;
-  background-repeat: no-repeat;
-  margin-top: 4rem;
-}
-@media (min-width: 64em) {
-  .phase__img {
-    flex: 3;
-    order: 2;
-    height: 41rem;
-    margin-top: -10rem;
-    margin-bottom: 2rem;
-  }
-}
-.phase__text {
-  text-align: center;
-  margin-bottom: 3rem;
-}
-@media (min-width: 64em) {
-  .phase__text {
-    flex: 2;
-    order: 1;
-    margin-bottom: 1.5rem;
-  }
-}
-.phase__text h1 {
-  color: #000;
-  font-family: "Poppins", sans-serif;
-  font-size: 1.25rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  margin-bottom: 1.5rem;
-}
-@media (min-width: 64em) {
-  .phase__text h1 {
-    font-size: 0.875rem;
-  }
+.phase__Hero__img {
+  background: transparent;
+  border-radius: 50px;
+  width: 10%;
 }
 
 html {
@@ -342,6 +301,7 @@ button.view {
   text-align: center;
   justify-content: center;
   margin: 4.175rem 15rem;
+  margin-bottom: 4rem;
 }
 .abt h2 {
   color: #000;
