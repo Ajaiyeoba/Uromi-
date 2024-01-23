@@ -1,77 +1,19 @@
-// .phase{
-//     background-image: url('/assets/Vector 4.svg');
-//     background-size: contain;
-//     background-repeat: no-repeat;
-//     background-position: center;
-//     height: 100%;
-//     display: block;
-//     margin-top: rem;
+.phase{  
+    background-image: url('/assets/Vector4.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right ;
+    min-height: 17.5rem;
+    position: relative;
+    margin-top: 2rem;
+    @include breakpoint-up(large){
 
-//     @include breakpoint-up(large){
-//         display: flex;
-//         align-items: center;
-//      }
-//    .phaseHero{
-//         &__img{
-//        display: flex;
-//        background-image: url('/assets/Activities.png');
-//        height: 40rem;
-//        background-repeat: no-repeat;
-//        margin-top: 4rem;
-//        @include breakpoint-up(large){
-//         flex: 3;
-//             order: 2;
-//             height: 41rem;
-//             margin-top: -10rem;
-//             margin-bottom: 2rem;
-//        }
-//     }
-    
-//     &__text{
-//         text-align: center;
-//         margin-bottom: 3rem;
-//         @include breakpoint-up(large){
-//             flex: 2;
-//             order: 1;
-//             margin-bottom: 1.5rem;
-//          }
-//         h1{
-//         color: $color3;
-//         font-family: $font-fam;
-//         font-size: $font-lg;
-//         font-style: normal;
-//         font-weight: 600;
-//         line-height: normal;
-//         margin-bottom: 1.5rem;
-        
-    
-//             @include breakpoint-up(large){
-//                 font-size: $font-sm;
-//             }
-//     }
-//     }
-//    }
-
-// }
-.phase{
-    display: inline;
-    margin-top: -5rem;
-    background-color: $color2;
-
-
+    }
 
     &__Hero{
         display: flex;
-        background-color: $color2;
-        width: 100%;
-
-        &__img{
-            background: transparent;
-            border-radius: 50px;
-            width: 10%;
-        }
+        
+    }
 
     }
-     \
-     ]'[;p9lkiujtrgwa`567890-M MN   `   
-}
+        

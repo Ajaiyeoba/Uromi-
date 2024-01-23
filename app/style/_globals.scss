@@ -1,6 +1,7 @@
 html{
     font-size: 100%;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 *,  *::before , *::after {
     box-sizing: inherit;
@@ -48,31 +49,39 @@ a, a:visited, a:hover{
 }
 
 // Buttons
-
-button.contact{
+button{
     padding: 0.625rem 1.625rem;
     border-radius: 6px;
     border: none;
     cursor: pointer;
-    color: $color1;
-    background-color: $color2;
     font-weight:  500;
     font-family:  $font-fam;
     font-size: 0.8125rem;
+    transition:  all 0.3s ease-out;
 }
-button.view{
-    padding: 0.625rem 1.625rem;
-    border-radius: 6px;
-    cursor: pointer;
+button.contact{
+    color: $color1;
+    background-color: $color2;   
+}
+button.view{ 
     color: $color2;
     background-color: $color1;
-    font-weight:  400;
-    font-family:  $font-fam;
-    font-size: 0.8125rem;
     border: 1px solid $color2;
 }
 
+button.contact:hover{
+    transition:  all 0.3s ease-out;
+    color: $color2;
+    background-color: $color1;
+    border: 1px solid $color2;
+}
 
+button.view:hover{
+    transition:  all 0.3s ease-out;
+    color: $color1;
+    background-color: $color2;
+    border: 1px solid $color1;
+}
 
 // Visibility
 // Hide for tablets and mobile devices
