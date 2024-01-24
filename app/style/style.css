@@ -45,10 +45,34 @@
   background-position: right;
   min-height: 17.5rem;
   position: relative;
+  stroke-width: 1px;
+  stroke: #999;
   margin-top: 2rem;
 }
 .phase__Hero {
   display: flex;
+  margin-top: 1rem;
+}
+.phase__text {
+  width: 32.25rem;
+  height: 5.68rem;
+  flex-shrink: 0;
+}
+.phase__text h1 {
+  color: #000;
+  font-family: "$font-fam";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 170%; /* 51px */
+}
+.phase__text h1 span {
+  color: #1090CB;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 170%; /* 51px */
 }
 
 html {

@@ -5,6 +5,8 @@
     background-position: right ;
     min-height: 17.5rem;
     position: relative;
+    stroke-width: 1px;
+    stroke: #999;
     margin-top: 2rem;
     @include breakpoint-up(large){
 
@@ -12,8 +14,33 @@
 
     &__Hero{
         display: flex;
+        margin-top: 1rem;
         
     }
 
+
+    &__text{
+        width: 32.25rem;
+height: 5.68rem;
+flex-shrink: 0;
+
+h1{
+    color: $color3;
+font-family: '$font-fam';
+font-size: 30px;
+font-style: normal;
+font-weight: 600;
+line-height: 170%; /* 51px */
+
+span{
+    color: $color2;
+font-family: Poppins;
+font-size: 30px;
+font-style: normal;
+font-weight: 600;
+line-height: 170%; /* 51px */
+}
+}
+    }
     }
         
