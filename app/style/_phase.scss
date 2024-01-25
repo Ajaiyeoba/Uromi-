@@ -1,46 +1,119 @@
-.phase{  
+// .phase{  
+//     background-image: url('/assets/Vector4.svg');
+//     background-size: 50%;
+//     background-repeat: no-repeat;
+//     background-position: center ;
+//     min-height: 17.5rem;
+//     position: relative;
+//     stroke-width: 1px;
+//     stroke: #999;
+//     margin-top: 2rem;
+
+   
+
+//     &__Hero{
+//         display: flex;
+//         margin: 2rem 1rem 2rem 1rem;
+        
+//         @include breakpoint-up(large){
+        
+            
+    
+//         }
+//     }
+//     &__img img{
+//         height: 100%;
+//         width: 30rem;
+
+//         @include breakpoint-up(large){
+//             height: 30rem;
+//             flex: 2;
+            
+
+//         }
+//     }
+
+//     &__text{
+//         width: 32.25rem;
+// height: 5.68rem;
+// flex-shrink: 0;
+// text-align: center;
+// margin-top: 4rem;
+// margin-left: 1.5rem;
+
+// h1{
+//     color: $color3;
+// font-family: '$font-fam';
+// font-size: 30px;
+// font-style: normal;
+// font-weight: 600;
+// line-height: 170%; /* 51px */
+
+// span{
+//     color: $color2;
+// font-family: Poppins;
+// font-size: 30px;
+// font-style: normal;
+// font-weight: 600;
+// line-height: 170%; /* 51px */
+// }
+// }
+//     }
+//     }
+        
+.phase{
+
     background-image: url('/assets/Vector4.svg');
-    background-size: cover;
     background-repeat: no-repeat;
-    background-position: right ;
-    min-height: 17.5rem;
-    position: relative;
-    stroke-width: 1px;
-    stroke: #999;
-    margin-top: 2rem;
-    @include breakpoint-up(large){
-
-    }
-
+    background-position: center;
+    background-size: 50%;
+    
     &__Hero{
-        display: flex;
-        margin-top: 1rem;
-        
+
+        @include breakpoint-up(large){
+            display: flex;        
+            flex: 1;
     }
-
-
+    }
     &__text{
-        width: 32.25rem;
-height: 5.68rem;
-flex-shrink: 0;
+        font-size: $font-md;
+        margin-top: 4rem;
+        margin-left: 2rem;
 
-h1{
-    color: $color3;
-font-family: '$font-fam';
-font-size: 30px;
-font-style: normal;
-font-weight: 600;
-line-height: 170%; /* 51px */
 
-span{
-    color: $color2;
-font-family: Poppins;
-font-size: 30px;
-font-style: normal;
-font-weight: 600;
-line-height: 170%; /* 51px */
-}
-}
+        @include breakpoint-up(large){
+            font-size: $font-lg;
+        }
+
+        h1{
+            color: $color3;
+            font-family: '$font-fam';
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 170%; /* 51px */
+
+        }
+          h1  span{
+            color: $color2;
+            font-family: $font-fam;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 170%; /* 51px */
+            }
+       
+        }
+
+    &__img{
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+
+        @include breakpoint-up(large){
+           height: 30rem;
+           width: 50%;    
+        }
     }
-    }
-        
+}
+

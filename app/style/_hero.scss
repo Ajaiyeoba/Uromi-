@@ -1,3 +1,5 @@
+// Hero Section
+
 .hero{
  background: $color5;
  
@@ -79,32 +81,43 @@
 }
 
 
+// About Section
 .abt{
     background-color: $color1;
     text-align: center;
-    justify-content: center;
-    margin: 4.175rem 15rem;
-    margin-bottom: 4rem;
-
-    h2{
-        color: $color3;
-        text-align: center;
-        font-family: $font-fam;
-        font-size: $font-lg;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 160%; /* 52.8px */
-flex-shrink: 0;
-
+    margin-bottom: 3rem;
+    @include breakpoint-up(large){
+        flex: 2;
+        order: 1;
+        margin: 1.5rem;
+     }
+    h1{
+    color: $color3;
+    font-family: $font-fam;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 1.5rem;
+    
+        @include breakpoint-up(large){
+            font-size: $font-xlg;
+        }
+}
+    h1 span{
+    color: $color2;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
     }
 
     p{
         color: $color4;
-        text-align: center;
         font-family: $font-fam;
-        font-size: $font-md;
+        font-size: 1rem;
         font-style: normal;
-        font-weight: 500;
-        line-height: 175%; /* 31.5px */
+        font-weight: 400;
+        line-height: 204.3%; /* 32.688px */
+        margin-bottom: 2.25rem;
     }
 }
