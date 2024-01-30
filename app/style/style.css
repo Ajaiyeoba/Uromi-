@@ -43,6 +43,8 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: 50%;
+  min-height: 17.5rem;
+  display: block;
 }
 @media (min-width: 64em) {
   .phase__Hero {
@@ -86,6 +88,31 @@
     height: 30rem;
     width: 50%;
   }
+}
+
+.Card {
+  padding: 9rem;
+  display: flex;
+  justify-content: center;
+}
+.Card__rect {
+  width: 472px;
+  height: 350px;
+  flex-shrink: 0;
+  margin: 1rem;
+  border-radius: 20px;
+  background: #f4f4f4;
+  padding: 2rem 2rem;
+  text-align: center;
+  justify-content: center;
+}
+.Card__rect1 {
+  border-radius: 20px;
+  background: #1090CB;
+  color: #FFFFFF;
+  background-image: url("/assets/BellAngle.png");
+  background-repeat: no-repeat;
+  background-position: right top;
 }
 
 html {

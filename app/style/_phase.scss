@@ -67,7 +67,12 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 50%;
-    
+    min-height: 17.5rem;
+    display: block;
+    @include breakpoint-up(large){
+        // display: none;
+    }
+
     &__Hero{
 
         @include breakpoint-up(large){
@@ -117,3 +122,30 @@
     }
 }
 
+
+
+.Card{
+    padding: 9rem;
+    display: flex;
+    justify-content: center;
+    &__rect{
+        width: 472px;
+        height: 350px;
+        flex-shrink: 0;
+        margin: 1rem;
+        border-radius: 20px;
+        background: $color7;
+        padding: 2rem 2rem;
+        text-align: center;
+        justify-content: center;
+    }
+    &__rect1{
+        border-radius: 20px;
+        background: $color2;
+        color: $color1;
+        background-image: url('/assets/BellAngle.png');
+        background-repeat: no-repeat;
+        background-position: right top;
+        
+    }
+}
