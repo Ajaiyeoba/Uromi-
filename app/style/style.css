@@ -92,12 +92,17 @@
 
 .Card {
   padding: 9rem;
-  display: flex;
+  display: block;
   justify-content: center;
 }
+@media (min-width: 64em) {
+  .Card {
+    display: flex;
+  }
+}
 .Card__rect {
-  width: 472px;
-  height: 350px;
+  width: 372px;
+  height: 450px;
   flex-shrink: 0;
   margin: 1rem;
   border-radius: 20px;
@@ -105,6 +110,15 @@
   padding: 2rem 2rem;
   text-align: center;
   justify-content: center;
+  margin-left: 4rem;
+}
+@media (min-width: 64em) {
+  .Card__rect {
+    width: 472px;
+    text-align: center;
+    justify-content: center;
+    height: 300px;
+  }
 }
 .Card__rect1 {
   border-radius: 20px;
@@ -113,6 +127,101 @@
   background-image: url("/assets/BellAngle.png");
   background-repeat: no-repeat;
   background-position: right top;
+}
+
+.frame {
+  text-align: center;
+}
+.frame__text h6 {
+  color: #000;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 159%; /* 38.16px */
+}
+.frame__logos {
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 64em) {
+  .frame__logos {
+    display: flex;
+    margin-left: 2rem;
+  }
+}
+@media (min-width: 64em) {
+  .frame__logos__logo img {
+    margin-left: 2rem;
+    flex-direction: row;
+  }
+}
+
+.subscribe {
+  height: 450px;
+  background: #E8F4FA;
+  padding: 4.5rem 4.5rem;
+}
+@media (min-width: 64em) {
+  .subscribe {
+    justify-content: center;
+    align-items: center;
+  }
+}
+.subscribe__text {
+  color: #252525;
+  text-align: center;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 170%; /* 51px */
+}
+.subscribe__form {
+  display: block;
+}
+@media (min-width: 64em) {
+  .subscribe__form {
+    display: flex;
+    justify-content: center;
+    margin-left: 2rem;
+  }
+}
+.subscribe__btn {
+  border-radius: 10px;
+  background: #000;
+  width: 100%;
+  padding: 0.625rem 1.625rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8125rem;
+  transition: all 0.3s ease-out;
+  color: #FFFFFF;
+  background-color: #1090CB;
+  margin-top: 1rem;
+}
+@media (min-width: 64em) {
+  .subscribe__btn {
+    width: 20%;
+  }
+}
+
+input {
+  color: #000;
+  width: 100%;
+  padding: 2rem 2rem;
+  border-radius: 10px;
+  border: none;
+}
+@media (min-width: 64em) {
+  input {
+    width: 30%;
+    text-align: center;
+    justify-content: center;
+  }
 }
 
 html {

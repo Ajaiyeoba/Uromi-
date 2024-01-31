@@ -126,11 +126,16 @@
 
 .Card{
     padding: 9rem;
-    display: flex;
+    display: block;
     justify-content: center;
+
+    @include breakpoint-up(large){
+        display: flex;
+
+    }
     &__rect{
-        width: 472px;
-        height: 350px;
+        width: 372px;
+        height: 450px;
         flex-shrink: 0;
         margin: 1rem;
         border-radius: 20px;
@@ -138,6 +143,13 @@
         padding: 2rem 2rem;
         text-align: center;
         justify-content: center;
+        margin-left: 4rem;
+        @include breakpoint-up(large){
+            width: 472px;
+            text-align: center;
+            justify-content: center;
+            height: 300px;
+        }
     }
     &__rect1{
         border-radius: 20px;
@@ -145,7 +157,108 @@
         color: $color1;
         background-image: url('/assets/BellAngle.png');
         background-repeat: no-repeat;
-        background-position: right top;
+        background-position: right top;  
+    }
+}
+
+.frame{
+    text-align: center;
+
+
+    &__text h6{
+        color: $color3;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 159%; /* 38.16px */
+
+    }
+
+    &__logos{
+        display: block;
+        align-items: center;
         
+        justify-content: center;
+         
+        @include breakpoint-up(large){
+            display: flex;
+            margin-left: 2rem;
+        }
+
+        &__logo img{
+           
+
+            @include breakpoint-up(large){
+            margin-left: 2rem;
+            flex-direction: row;
+            }
+        }
+        
+    }
+}
+
+.subscribe{
+    height: 450px;
+    background: $color8;
+    padding: 4.5rem 4.5rem;
+
+    @include breakpoint-up(large){
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__text{
+        color: $color9;
+        text-align: center;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 170%; /* 51px */
+    }
+
+    &__form{
+        display: block;
+
+        @include breakpoint-up(large){
+            display: flex;
+            justify-content: center;
+            margin-left: 2rem;
+        }
+    }
+
+&__btn{
+    border-radius: 10px;
+    background: #000;
+    width: 100%;
+            padding: 0.625rem 1.625rem;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+            font-weight:  500;
+            font-family:  $font-fam;
+            font-size: 0.8125rem;
+            transition:  all 0.3s ease-out;
+        color: $color1;
+        background-color: $color2;   
+        margin-top: 1rem;
+    
+    @include breakpoint-up(large){
+        width: 20%;
+    }
+    }
+
+
+}
+input{
+    color: $color3;
+    width: 100%;
+    padding: 2rem 2rem;
+    border-radius: 10px;
+    border: none;
+    @include breakpoint-up(large){
+        width: 30%;
+        text-align: center;
+        justify-content: center;
     }
 }
